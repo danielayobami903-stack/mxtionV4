@@ -7742,7 +7742,7 @@ run(function()
 
 	-- DYNAMIC SWORD TIMING & HITSPACING SYSTEM
 	local SwordTiming = {
-		SafeSpacing  = 0.295, -- Stealth Mode delay
+		SafeSpacing  = 0.280, -- Stealth Mode delay
 		HighSpacing  = 0.2855, -- spacing in each hits for Advanced Mode only
 		HitFloor     = 0.292, --  he server's minimum allowed time between hits. Going below this will cause ghost hits.
 		GapFloor     = 0.2945, -- minimum gap between con hits

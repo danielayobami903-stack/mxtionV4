@@ -7723,7 +7723,7 @@ run(function()
 	local lastAnimTime = 0 -- Track when last animation was played to prevent doubling
 	local anims, AnimDelay, AnimTween, armC0 = vape.Libraries.auraanims, tick()
 	local FROZEN_THRESHOLD = 10
-	local HIT_PERIOD = 0.265 -- Killaura hit period fallback matching SafeSpacing
+	local HIT_PERIOD = 0.215 -- Killaura hit period fallback matching SafeSpacing
 	local SERVER_FLOOR = 0.292
 	local SERVER_REACH = 14.399
 	local NORMAL_SWORD_SWING_SPEED = 0.35 -- Standard in-game sword swing speed, NEVER changes
@@ -7742,7 +7742,7 @@ run(function()
 
 	-- DYNAMIC SWORD TIMING & HITSPACING SYSTEM
 	local SwordTiming = {
-		SafeSpacing  = 0.265, -- Stealth Mode delay
+		SafeSpacing  = 0.225, -- Stealth Mode delay
 		HighSpacing  = 0.2855, -- spacing in each hits for Advanced Mode only
 		HitFloor     = 0.292, --  he server's minimum allowed time between hits. Going below this will cause ghost hits.
 		GapFloor     = 0.2945, -- minimum gap between con hits

@@ -221,7 +221,7 @@ local function downloadFile(path, func)
 	if not isfile(path) then
 		createDownloader(path)
 		local suc, res = pcall(function()
-			return game:HttpGet('https://raw.githubusercontent.com/GlockSwitchMotion/mxtionV4/'..readfile('mxtionv4/profiles/commit.txt')..'/'..select(1, path:gsub('mxtionv4/', '')), true)
+			return game:HttpGet('https://raw.githubusercontent.com/danielayobami903-stack/mxtionV4/'..readfile('mxtionv4/profiles/commit.txt')..'/'..select(1, path:gsub('mxtionv4/', '')), true)
 		end)
 		if not suc or res == '404: Not Found' then
 			error(res)
@@ -3734,7 +3734,7 @@ topbar:CreateDropdown({
 			if shared.VapeDeveloper then
 				loadstring(readfile('mxtionv4/init.lua'), 'init')()
 			else
-				loadstring(game:HttpGet('https://raw.githubusercontent.com/GlockSwitchMotion/mxtionV4/'..readfile('mxtionv4/profiles/commit.txt')..'/init.lua', true))()
+				loadstring(game:HttpGet('https://raw.githubusercontent.com/danielayobami903-stack/mxtionV4/'..readfile('mxtionv4/profiles/commit.txt')..'/init.lua', true))()
 			end
 		end
 	end,
@@ -3772,7 +3772,7 @@ topbar:CreateButton({
 		if shared.VapeDeveloper then
 			loadstring(readfile('mxtionv4/init.lua'), 'init')()
 		else
-			loadstring(game:HttpGet('https://raw.githubusercontent.com/GlockSwitchMotion/mxtionV4/'..readfile('mxtionv4/profiles/commit.txt')..'/init.lua', true))()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/danielayobami903-stack/mxtionV4/'..readfile('mxtionv4/profiles/commit.txt')..'/init.lua', true))()
 		end
 	end,
 	Tooltip = 'This will set your profile to the default settings of Vape'
@@ -3836,7 +3836,7 @@ topbar:CreateButton({
 		if shared.VapeDeveloper then
 			loadstring(readfile('mxtionv4/init.lua'), 'init')()
 		else
-			loadstring(game:HttpGet('https://raw.githubusercontent.com/GlockSwitchMotion/mxtionV4/'..readfile('mxtionv4/profiles/commit.txt')..'/init.lua', true))()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/danielayobami903-stack/mxtionV4/'..readfile('mxtionv4/profiles/commit.txt')..'/init.lua', true))()
 		end
 	end,
 	Tooltip = 'Reloads vape for debugging purposes'
